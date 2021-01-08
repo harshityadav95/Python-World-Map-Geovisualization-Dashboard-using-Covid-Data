@@ -43,3 +43,29 @@ Task 6: Convert Jupyter notebook to dashboard.
 
 ## Process
 
+Convert a Jupyter Notebook into a Dashboard
+Note: So that you don't have to enter your personal details into the VM, this section of the project is a set of written instructions which you can try out on your personal system.
+
+To create a dashboard like the one I created in the video, follow these steps:
+
+1) Make a copy of the notebook that you receive after completing this project. Rename it 'covidmap'. (Or any other short name)
+
+2) Remove all Markdown cells. 
+
+
+3) The only output that should be visible are the final choropleth map with markers and the final heatmap with markers. To prevent other outputs from being displayed, just add a semicolon at the end of the code and rerun the kernel.
+
+
+4) To add a heading above the maps to indicate what they represent, just add a markdown cell above the cell containing the map output.
+
+
+5) Save your notebook. Ensure that it is in the same directory as your jupyter lab installation.
+
+6) Open the terminal and type in:  
+
+jupyter nbconvert covidmap1.ipynb --no-input --no-prompt
+
+
+Note: If you named the copy of the notebook something else, replace that name where I have used 'covidmap.ipynb'
+
+7) You will now have a file named 'covidmap.html'
